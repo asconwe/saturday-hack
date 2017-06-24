@@ -4,7 +4,7 @@ import React from 'react';
 export default class UserBio extends React.Component {
 	render() {
 		return (
-			<div className="row">  
+			<div className="row">
                 <div className="col-xs-12"> <!-- UserBio -->
                     <div className="row">
                         <div className="col-md-4">
@@ -18,7 +18,7 @@ export default class UserBio extends React.Component {
                     </div>
                 </div>
             </div>
-			);
+					);			
         }
 
     }
