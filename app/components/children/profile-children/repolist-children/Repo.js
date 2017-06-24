@@ -21,14 +21,18 @@ class Repo extends React.Component {
 
     render() {
         return (
-            <div className="panel panel-default">
-                <div className="panel-heading">
-                    <h2>{this.props.repoName}</h2>
-                    <p>{this.props.dateCreated}</p>
-                </div>
-                <div className="panel-body">
-                    <h4>{this.props.description}</h4>
-                    <h4>{this.props.languages}</h4>
+            <div className="row">
+                <div className="col-xs-12">
+                    <div className="panel panel-default">
+                        <div className="panel-heading">
+                            <h2>{this.props.repoName}</h2>
+                            <p>{this.props.dateCreated}</p>
+                        </div>
+                        <div className="panel-body">
+                            <h4>{this.props.description}</h4>
+                            <h4>{this.props.languages}</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
