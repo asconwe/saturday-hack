@@ -1,0 +1,35 @@
+const asconweUser {
+    "login": "asconwe",
+    "id": 19544383,
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19544383?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/asconwe",
+    "html_url": "https://github.com/asconwe",
+    "followers_url": "https://api.github.com/users/asconwe/followers",
+    "following_url": "https://api.github.com/users/asconwe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/asconwe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/asconwe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/asconwe/subscriptions",
+    "organizations_url": "https://api.github.com/users/asconwe/orgs",
+    "repos_url": "https://api.github.com/users/asconwe/repos",
+    "events_url": "https://api.github.com/users/asconwe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/asconwe/received_events",
+    "type": "User",
+    "site_admin": false,
+    "name": null,
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "hireable": true,
+    "bio": null,
+    "public_repos": 29,
+    "public_gists": 1,
+    "followers": 1,
+    "following": 0,
+    "created_at": "2016-05-24T04:01:34Z",
+    "updated_at": "2017-06-04T23:45:51Z"
+}
+
+
+export default asconweUser
