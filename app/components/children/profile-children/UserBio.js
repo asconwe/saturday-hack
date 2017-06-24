@@ -18,7 +18,7 @@ export default class UserBio extends React.Component {
                     </div>
                 </div>
             </div>
-			);
+					);			
         }
 
     }
