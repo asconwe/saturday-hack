@@ -9,9 +9,11 @@ import {
 } from 'react-router-dom'
 
 // Import components
+import UserBio from './profile-children/UserBio'
+import RepoList from './profile-children/RepoList'
 
 // Create Main component
-class Repo extends React.Component {
+class Profile extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -27,7 +29,6 @@ class Repo extends React.Component {
                 </div>
                 <div className="row">
                     <RepoList />
-                    
                 </div>
             </div>
         )
@@ -35,5 +36,5 @@ class Repo extends React.Component {
 }
 
 // Export the component back for use in other files
-export default Main
+export default Profile
 
