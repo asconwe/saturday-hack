@@ -2,16 +2,16 @@
 import React from 'react'
 
 // Including the Link component from React Router to navigate within our application without full page reloads
-import {
-    HashRouter,
-    Route,
-    Link
-} from 'react-router-dom'
+// import {
+//     HashRouter,
+//     Route,
+//     Link
+// } from 'react-router-dom'
 
 // Import components
-
+import Repo from './repolist-children/Repo'
 // Create Main component
-class Repo extends React.Component {
+class RepoList extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -22,11 +22,11 @@ class Repo extends React.Component {
     render() {
         return (
             <div className="col-xs-12">
-                {this.props.repoList.map((repo, index) => (<Repo repoName={} dateCreated={} description={} languages={} key={index}))}
+                {this.props.repoList.map((repo, index) => (<Repo repoName={repo.name} dateCreated={repo.created_at} description={repo.description} languages={repo.language} key={index} />))}
             </div>
         )
     }
 }
 
 // Export the component back for use in other files
-export default Main
+export default RepoList
