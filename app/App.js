@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const appRoot = document.getElementById('app');
-const App = (props) => <h1>Github Respository Viewer</h1>;
+import App from './components/index.js'
+// const appRoot = document.getElementById('app');
 
 ReactDOM.render(<App/>, document.querySelector("#app"));
