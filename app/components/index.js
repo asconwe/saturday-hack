@@ -10,6 +10,7 @@ import React from 'react'
 
 // Import components
 import Profile from './children/Profile'
+import Home from './children/Home'
 
 // Create Main component
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
                         <h1>Github Project Viewer</h1>
                     </div>
                 </div>
+                <Home />
                 <Profile />
             </div>
         )
