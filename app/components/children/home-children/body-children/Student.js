@@ -24,10 +24,10 @@ class Student extends React.Component {
         </div>
         <div className="row">
           <div className="col-md-6">
-            <h3> Followers </h3>
+            <h3> Followers: {this.props.followers} </h3>
           </div>
           <div className="col-md-6">
-            <h3> Repos </h3>
+            <h3> Repos {this.props.public_repos} </h3>
           </div>
         </div>
     );
