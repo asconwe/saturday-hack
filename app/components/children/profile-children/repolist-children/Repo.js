@@ -2,11 +2,11 @@
 import React from 'react'
 
 // Including the Link component from React Router to navigate within our application without full page reloads
-import {
-    HashRouter,
-    Route,
-    Link
-} from 'react-router-dom'
+// import {
+//     HashRouter,
+//     Route,
+//     Link
+// } from 'react-router-dom'
 
 // Import components
 
@@ -40,4 +40,4 @@ class Repo extends React.Component {
 }
 
 // Export the component back for use in other files
-export default Main
+export default Repo
