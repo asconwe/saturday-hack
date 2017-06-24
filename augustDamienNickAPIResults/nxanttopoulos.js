@@ -1,4 +1,4 @@
-[
+const nxanttopoulos = [
   {
     "id": 86165707,
     "name": "Adventure-Hound",
@@ -1780,3 +1780,5 @@
     "default_branch": "master"
   }
 ]
+
+export default nxanttopoulos

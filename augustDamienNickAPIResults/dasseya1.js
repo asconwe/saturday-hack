@@ -1,4 +1,4 @@
-
+const desseya1 = 
 {
   "total_count": 8,
   "incomplete_results": false,
@@ -725,3 +725,5 @@
     }
   ]
 }
+
+export default dasseya1
