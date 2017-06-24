@@ -113,19 +113,19 @@ class Profile extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="row">
-                    <UserBio />
-                </div>
-                <div className="row">
+            <div className="container">
+                    <UserBio 
+                    avatar_url={this.state.repoList[0].owner.avatar_url}
+                    login={this.state.repoList[0].owner.login}
+                    />
                
                     <RepoList repoList={this.state.repoList} />
-                </div>
+
             </div>
-        )
+        );
     }
 }
 
-// Export the component back for use in other files
+
 export default Profile
 

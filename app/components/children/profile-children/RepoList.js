@@ -21,9 +21,12 @@ class RepoList extends React.Component {
 
     render() {
         return (
-            <div className="col-xs-12">
-                {this.props.repoList.map((repo, index) => (<Repo repoName={repo.name} dateCreated={repo.created_at} description={repo.description} languages={repo.language} key={index} />))}
-            </div>
+            <div className="row">
+                <div className="col-xs-12">
+                    {this.props.repoList.map((repo, index) => (<Repo repoName={repo.name} dateCreated={repo.created_at} description={repo.description} languages={repo.language} key={index} />))}
+                </div>
+
+           </div>
         )
     }
 }
