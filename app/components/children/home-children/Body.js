@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Include React
 import React from 'react'
 
@@ -22,8 +23,7 @@ class Body extends React.Component {
     render() {
         return (
             <div className="col-xs-12">
-                <div className="row">
-                    {console.log(this.props.studentList)}    
+                <div className="row">  
                     {this.props.studentList.map((student, index) => (<Student img={student.avatar_url} name={student.login} key={index} />))}
                 </div>
             </div>
@@ -33,6 +33,7 @@ class Body extends React.Component {
 
 // Export the component back for use in other files
 export default Body
+
 
 
 

@@ -17,6 +17,7 @@ class Student extends React.Component {
           </div>
         </ Link>
       </ HashRouter>
+
     );
   }
 }
