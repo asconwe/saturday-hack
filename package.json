@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack -w",
-    "heroku-postbuild": "webpack -p"
+    "dev": "webpack -w"
   },
   "repository": {
     "type": "git",
