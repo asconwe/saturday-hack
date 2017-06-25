@@ -1,15 +1,6 @@
 // Include React
 import React from 'react'
 
-// Including the Link component from React Router to navigate within our application without full page reloads
-// import {
-//     HashRouter,
-//     Route,
-//     Link
-// } from 'react-router-dom'
-
-// Import components
-
 // Create Main component
 class Query extends React.Component {
     constructor() {
@@ -23,7 +14,7 @@ class Query extends React.Component {
     handleChange(event) { 
         this.setState({ queryValue: event.target.value })
         this.props.filterList({
-            queryValue: event.target.value
+            queryValue: event.target.value + " "
         })
     }
     
@@ -31,8 +22,10 @@ class Query extends React.Component {
         return (
             <div className="col-xs-12">
                 <div className="input-group">
-                    <input className="form-control" type="text" onChange={this.handleChange} value={this.state.queryValue}/>
+                    <label htmlFor="filter">Filter by username</label>
+                    <input className="form-control" type="text" name="filter" onChange={this.handleChange} value={this.state.queryValue}/>
                 </div>
+                <hr />
             </div>
         )
     }

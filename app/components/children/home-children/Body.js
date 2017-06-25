@@ -24,7 +24,7 @@ class Body extends React.Component {
             <div className="col-xs-12">
                 <div className="row">
                     {console.log(this.props.studentList)}    
-                    {this.props.studentList.map((student, index) => (<Student img={student.avatar_url} name={student.login} />))}
+                    {this.props.studentList.map((student, index) => (<Student img={student.avatar_url} name={student.login} key={index} />))}
                 </div>
             </div>
         )

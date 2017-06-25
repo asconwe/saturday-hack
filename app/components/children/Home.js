@@ -115,20 +115,22 @@ class Home extends React.Component {
                     "updated_at": "2017-05-17T22:28:04Z"
                 }
 
-            ]
+            ],
+            filteredList: undefined
         }
         this.filterList = this.filterList.bind(this);
     }
     filterList(input) {
         const filteredList = this.state.studentList.filter((student, index) => {
             const length = input.queryValue.length;
-            console.log('length', length);
-            const slicedStudent = student.login.slice(0, length);
-            console.log('slicedStudent', slicedStudent)
-            return slicedStudent === input.queryValue;
+            const comparison = input.queryValue.slice(0, length - 1)
+            const slicedStudent = student.login.slice(0, length - 1);
+            console.log(slicedStudent, comparison);
+            return slicedStudent === comparison;
         })
+        console.log('filteredList ====', filteredList)
         this.setState({
-            studentList: filteredList
+            filteredList: filteredList
         })
     }
     render() {
@@ -138,7 +140,7 @@ class Home extends React.Component {
                     <Query filterList={this.filterList} />
                 </div>
                 <div className="row">
-                    <Body studentList={this.state.studentList} />
+                    <Body studentList={this.state.filteredList ? this.state.filteredList : this.state.studentList} />
                 </div>
             </div>
         )
