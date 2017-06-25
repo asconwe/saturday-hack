@@ -1,6 +1,6 @@
 // Include React
 import React from 'react'
-
+import axios from 'axios'
 // Including the Link component from React Router to navigate within our application without full page reloads
 // import {
 //     HashRouter,
@@ -11,13 +11,14 @@ import React from 'react'
 // Import components
 import Query from './home-children/Query'
 import Body from './home-children/Body'
+import usernames from '../../../usernames'
 
 // Create Home component
 class Home extends React.Component {
     constructor() {
         super();
         this.state = {
-            studentList: [
+            fakeStudentList: [
                 {
                     "login": "asconwe",
                     "id": 19544383,
@@ -116,9 +117,23 @@ class Home extends React.Component {
                 }
 
             ],
+            studentList: [],
             filteredList: undefined
         }
         this.filterList = this.filterList.bind(this);
+    }
+    componentDidMount() {
+        let studentList = []
+        usernames.map((user, index) => {
+            const url = 'https://api.github.com/users/' + user;
+            axios.get(url).then((response) => {
+                studentList.push(response.data);
+                if (index === usernames.length - 1) {
+                    this.setState({ studentList: studentList })
+                }
+
+            })
+        })
     }
     filterList(input) {
         const filteredList = this.state.studentList.filter((student, index) => {
